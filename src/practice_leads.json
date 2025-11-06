@@ -1,0 +1,28 @@
+{
+  "practice_leads": [
+    {
+      "username": "sarah.johnson",
+      "password_hash": "$2b$12$ZE8s.ESQ.ogDiQaQBmMG6OFLUGleAbe3r3WO0olcqjnp8vX4p5XM.",
+      "email": "sarah.johnson@slalom.com",
+      "role": "practice_lead",
+      "practice_areas": ["Technology", "Strategy"],
+      "full_name": "Sarah Johnson"
+    },
+    {
+      "username": "michael.chen",
+      "password_hash": "$2b$12$ZE8s.ESQ.ogDiQaQBmMG6OFLUGleAbe3r3WO0olcqjnp8vX4p5XM.",
+      "email": "michael.chen@slalom.com", 
+      "role": "practice_lead",
+      "practice_areas": ["Operations"],
+      "full_name": "Michael Chen"
+    },
+    {
+      "username": "admin",
+      "password_hash": "$2b$12$ZE8s.ESQ.ogDiQaQBmMG6OFLUGleAbe3r3WO0olcqjnp8vX4p5XM.",
+      "email": "admin@slalom.com",
+      "role": "admin", 
+      "practice_areas": ["Technology", "Strategy", "Operations"],
+      "full_name": "System Administrator"
+    }
+  ]
+}
