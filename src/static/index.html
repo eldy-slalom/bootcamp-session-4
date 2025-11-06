@@ -14,8 +14,43 @@
           <h1>Slalom Capabilities Management</h1>
           <h2>Consulting Expertise Platform</h2>
         </div>
+        <div class="auth-section">
+          <div id="auth-container">
+            <button id="login-btn" class="auth-btn">👤 Practice Lead Login</button>
+          </div>
+          <div id="user-info" class="hidden">
+            <span id="user-name"></span>
+            <button id="logout-btn" class="auth-btn">Logout</button>
+          </div>
+        </div>
       </div>
     </header>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Practice Lead Authentication</h3>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required placeholder="Enter username" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" required placeholder="Enter password" />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <div id="login-message" class="hidden"></div>
+        <div class="demo-credentials">
+          <h4>Demo Credentials:</h4>
+          <p><strong>Admin:</strong> username: admin, password: password</p>
+          <p><strong>Tech Lead:</strong> username: sarah.johnson, password: password</p>
+          <p><strong>Ops Lead:</strong> username: michael.chen, password: password</p>
+        </div>
+      </div>
+    </div>
 
     <main>
       <section id="capabilities-container">
@@ -27,21 +62,42 @@
       </section>
 
       <section id="register-container">
-        <h3>Register Your Expertise</h3>
-        <form id="register-form">
-          <div class="form-group">
-            <label for="email">Consultant Email:</label>
-            <input type="email" id="email" required placeholder="your-email@slalom.com" />
-          </div>
-          <div class="form-group">
-            <label for="capability">Select Capability:</label>
-            <select id="capability" required>
-              <option value="">-- Select a capability --</option>
-              <!-- Capability options will be loaded here -->
-            </select>
-          </div>
-          <button type="submit">Register Expertise</button>
-        </form>
+        <div id="practice-lead-section" class="hidden">
+          <h3>Capability Management (Practice Lead)</h3>
+          <form id="register-form">
+            <div class="form-group">
+              <label for="email">Consultant Email:</label>
+              <input type="email" id="email" required placeholder="consultant@slalom.com" />
+            </div>
+            <div class="form-group">
+              <label for="capability">Select Capability:</label>
+              <select id="capability" required>
+                <option value="">-- Select a capability --</option>
+                <!-- Capability options will be loaded here -->
+              </select>
+            </div>
+            <button type="submit">Register Consultant</button>
+          </form>
+        </div>
+        
+        <div id="consultant-section">
+          <h3>Request Capability Registration</h3>
+          <form id="request-form">
+            <div class="form-group">
+              <label for="request-email">Your Email:</label>
+              <input type="email" id="request-email" required placeholder="your-email@slalom.com" />
+            </div>
+            <div class="form-group">
+              <label for="request-capability">Select Capability:</label>
+              <select id="request-capability" required>
+                <option value="">-- Select a capability --</option>
+                <!-- Capability options will be loaded here -->
+              </select>
+            </div>
+            <button type="submit">Request Registration</button>
+          </form>
+        </div>
+        
         <div id="message" class="hidden"></div>
       </section>
     </main>
